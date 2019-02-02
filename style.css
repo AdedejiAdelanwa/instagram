@@ -1,1 +1,266 @@
-beautify me
+:root {
+  --cWidth: 96%;
+  --black-text: #0f0d0d7c;
+  --cBorder-color: #c1cedb;
+  --bRadius: 50%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+}
+
+body { background: cornflowerblue;}
+
+.frames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .frame {
+    position: relative;
+    width: 25rem;
+    height: 50rem;
+    background: #fff;
+    margin: 4rem auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frame:before {
+    content: '';
+    width: 27rem;
+    height: 52rem;
+    left: -1rem;
+    top: -1rem;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    border-radius: 1rem;
+    background: slategrey;
+  }
+
+  .frame > .notify-header {
+    width: 98%;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .notify-header > .ntwrk-group {
+    width: 40%;
+  }
+
+  .notify-header > .time {
+    width: 40%;
+  }
+
+  .notify-header > span {
+    font-weight: 600;
+  }
+
+  .nav-options {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: inset 0 -1px 0 0 #dfe0e0;
+  }
+
+  .nav-options > .username {
+    font-weight: 600;
+  }
+
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--cWidth);
+    height: 15vh;
+    
+  }
+
+  .user-info > .imageWgradient {
+    width: 30%;
+    height: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, gold,40%, red,80%, purple);
+    border-radius: 70%;
+  }
+
+  .imageWgradient > img {
+    width: 93%;
+    height: 93%;
+    object-fit: cover;
+    border-radius: 70%;
+  }
+
+  .user-info > .user-stats {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .user-stats > .stat-figures {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  .stat-figures > p {
+    
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .stat-figures small {
+    font-size: 11px;
+    font-weight: 100;
+    color: rgb(94, 107, 121);
+  }
+
+  .user-stats > .follow-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    
+  }
+
+  .follow-option > button {
+    font-weight: 600;
+  }
+
+  .follow-option > .follow-btn {
+    width: 82%;
+  }
+
+  .follow-option > .more-btn {
+    width: 15%;
+  }
+
+  .follow-option > * {
+    height: 50%;
+    border: 0px;
+    border-radius: 2px;
+    background: rgba(19, 58, 185,0.8);
+    color: #fff;
+  }
+
+  .bio {
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    padding: 0px 10px 10px 10px;
+    align-self: start;
+  }
+
+  .bio  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .bio a {
+    text-decoration: none;
+    color: rgb(6, 6, 117);
+  }
+
+  .photo-category {
+    width: 96%;
+    display: flex;
+    text-align: center;
+    padding-left: 15px;
+    box-shadow: inset 0 -1px 0 0 #dfe0e0;
+  }
+
+  .photo-category > div {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+    line-height: 2;
+  }
+
+  .photo-category > div:first-child {
+    margin-right: 20px;
+  
+  }
+
+
+  .photo-category > div > img {
+    width: 94%;
+    padding: 2px;
+    display: block;
+     object-fit: cover;
+    border: 1px solid #dfe0e0;
+    border-radius: 50%;
+  }
+
+  .photo-category  div  span {
+    padding-top: 10px;
+  }
+ 
+
+ .new-features {
+   width: 80%;
+   height: 6vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .pic-grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.pic-grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pic-grid {
+  position: absolute;
+  top: 55vh;
+  width: 100%;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100px;
+}
+
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+
+.lower-menu {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  background: #fff; 
+  justify-content: space-around;
+  align-items: center;  
+}
+￼
+￼.lower-menu > img {
+  height: 24px;
+  width: 10px;
+  display: block;
+}
+￼￼￼￼
