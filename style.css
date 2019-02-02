@@ -156,6 +156,7 @@ body { background: cornflowerblue;}
     border-radius: 2px;
     background: rgba(19, 58, 185,0.8);
     color: #fff;
+    outline: none;
   }
 
   .bio {
